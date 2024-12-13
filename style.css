@@ -1,0 +1,187 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    background-color: #f0f4f8; /* Slight background change on hover */
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 42px;
+    color: #1a73e8; /* Fresh blue */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header h1:hover {
+    color: #4caf50; /* Green hover effect */
+    transform: scale(1.05);
+}
+
+header p {
+    font-size: 18px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Form */
+form {
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Form Sections */
+.form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+input, select, textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Specific input types */
+input[type="date"],
+input[type="number"],
+input[type="tel"],
+select {
+    cursor: pointer;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #1a73e8; /* Blue border on focus */
+    box-shadow: 0 0 10px rgba(26, 115, 232, 0.3);
+    transform: scale(1.02);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Button */
+button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #1a73e8; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #4caf50; /* Green on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: #1a73e8; /* Matching blue */
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    color: #4caf50; /* Hover to green */
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    form {
+        gap: 15px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    form {
+        gap: 12px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
